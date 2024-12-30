@@ -1,0 +1,117 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General Form Styling */
+.form {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px 25px;
+    background: linear-gradient(0deg, #ffffff, #f8f8f8);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Input Container */
+  .input-span {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ED5C01; /* Highlighted label color */
+  }
+  
+  /* Inputs */
+  .input-span input[type="email"],
+  .input-span input[type="password"] {
+    padding: 10px 15px;
+    border: 1px solid #062D3E;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Focus Effect */
+  .input-span input[type="email"]:focus,
+  .input-span input[type="password"]:focus {
+    border-color: #ED5C01;
+    box-shadow: 0px 0px 5px #ED5C01;
+  }
+  
+  /* Forgot Password Link */
+  .span {
+    display: block;
+    margin: 10px 0;
+    text-align: right;
+  }
+  
+  .span a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #062D3E; /* Link color */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .span a:hover {
+    color: #ED5C01; /* Hover link color */
+  }
+  
+  /* Submit Button */
+  .submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ED5C01, #062D3E);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .submit:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .submit:active {
+    transform: scale(0.97);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Signup Prompt */
+  .span:last-of-type {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #062D3E;
+  }
+  
+  .span:last-of-type a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ED5C01;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .span:last-of-type a:hover {
+    color: #062D3E;
+  }
+  

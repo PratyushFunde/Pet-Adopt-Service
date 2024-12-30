@@ -1,0 +1,50 @@
+.main{
+    display: flex;
+    // border: 2px solid cyan;
+}
+
+.content{
+    // border: 3px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag-line{
+    // border: 2px solid cyan;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+    :nth-child(1)
+    {
+        font-weight: bold;
+    }
+    :nth-child(3)
+    {
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 80px;
+        font-family: "Josefin Sans";
+    }
+
+}
+
+.learn-more{
+    background-color: #ED5C01;
+    padding: 30px;
+    color: #FCEFE2;
+    font-size: medium;
+    font-family: "Josefin Sans";
+    // border-radius: 10px;
+    padding-block:  1rem;
+    padding-inline: 2.25rem;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+

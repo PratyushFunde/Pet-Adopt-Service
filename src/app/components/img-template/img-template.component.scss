@@ -1,0 +1,28 @@
+.main{
+    // margin-top: 1rem;
+    // border: 2px solid black;
+    height: 100vh;
+    // z-index: 10;
+    width: fit-content;
+    // gap: 1rem;
+    // border: 2px solid red;
+    .images{
+        display: flex;
+        
+        height: 100%;
+        width: fit-content;
+        // border: 2px solid blue;
+        img{
+            height: 100%;
+        }
+    }
+
+    .dog{
+        position: relative;
+        left: 9rem;
+        height: 705px;
+        width: 496px;
+        // border: 2px solid red;
+        margin-top: 2.1rem;
+    }
+}

@@ -1,1 +1,117 @@
 /* You can add global styles to this file, and also import other style files */
+/* Border Classes with 2px Dotted Borders */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bd-red {
+    border: 2px dotted red; /* Red dotted border */
+  }
+  
+  .bd-blue {
+    border: 2px dotted blue; /* Blue dotted border */
+  }
+  
+  .bd-green {
+    border: 2px dotted green; /* Green dotted border */
+  }
+  
+  .bd-yellow {
+    border: 2px dotted yellow; /* Yellow dotted border */
+  }
+  
+  .bd-orange {
+    border: 2px dotted orange; /* Orange dotted border */
+  }
+  
+  .bd-purple {
+    border: 2px dotted purple; /* Purple dotted border */
+  }
+  
+  .bd-pink {
+    border: 2px dotted pink; /* Pink dotted border */
+  }
+  
+  .bd-gray {
+    border: 2px dotted gray; /* Gray dotted border */
+  }
+  
+  .bd-black {
+    border: 2px dotted black; /* Black dotted border */
+  }
+  
+  .bd-teal {
+    border: 2px dotted teal; /* Teal dotted border */
+  }
+/* Background Classes with Different Colors */
+.bg-red {
+    background-color: red; /* Red background */
+  }
+  
+  .bg-blue {
+    background-color: blue; /* Blue background */
+  }
+  
+  .bg-green {
+    background-color: green; /* Green background */
+  }
+  
+  .bg-yellow {
+    background-color: yellow; /* Yellow background */
+  }
+  
+  .bg-orange {
+    background-color: orange; /* Orange background */
+  }
+  
+  .bg-purple {
+    background-color: purple; /* Purple background */
+  }
+  
+  .bg-pink {
+    background-color: pink; /* Pink background */
+  }
+  
+  .bg-gray {
+    background-color: gray; /* Gray background */
+  }
+  
+  .bg-black {
+    background-color: black; /* Black background */
+    color: white; /* White text for readability */
+  }
+  
+  .bg-teal {
+    background-color: teal; /* Teal background */
+  }
+
+  .mp{
+    padding: 5px;
+  }
+  .mpl{
+    padding-left: 5px;
+  }
+  .mpr{
+    padding-right: 5px;
+  }
+  .mpt{
+    padding-top: 5px;
+  }
+  .mpb{
+    padding-bottom: 5px;
+  }
+
+  .mainbg{
+    background-color: #EBE3CC;
+  }
+
+  .primaryBlue{
+    color: #062D3E;
+  }
+  .primaryOrange{
+    color: #ED5C01;
+  }
