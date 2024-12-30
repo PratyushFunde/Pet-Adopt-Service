@@ -1,17 +1,28 @@
+
 <div class="main">
-        <div class="form bd-black">
-            <form action="">
+
+    <div class="form">
+        <div class="bar"></div>
+        <div class="form-container ">
+
+            <form #signOrLogInForm="ngForm"
+                (submit)="onFormSubmit(signOrLogInForm)">
                 <span class="input-span">
                     <label for="email" class="label">Email</label>
-                    <input type="email" name="email" id="email"
-                /></span>
+                    <input type="email" name="email" id="email" ngModel
+                        required /></span>
                 <span class="input-span">
                     <label for="password" class="label">Password</label>
-                    <input type="password" name="password" id="password"
-                /></span>
-                <span class="span"><a href="#">Forgot password?</a></span>
-                <input class="submit" type="submit" value="Log in" />
-                <span class="span">Don't have an account? <a href="#">Sign up</a></span>
+                    <input type="password" name="password" id="password" ngModel
+                        required /></span>
+                <span class="span" *ngIf="!login"><a href="#">Forgot
+                        password?</a></span>
+                <input class="submit" type="submit"
+                    [value]="!login ? 'Login' : 'SignUp'" />
+                <span
+                    class="span">{{!login?"Dont Have An Account ?":"Already Have an Account"}}
+                    <a
+                        (click)="handleSignInLogIn()">{{login?"Login":"SignUp"}}</a></span>
             </form>
         </div>
-</div>
+    </div>

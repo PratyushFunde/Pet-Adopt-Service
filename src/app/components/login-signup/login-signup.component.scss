@@ -11,7 +11,9 @@
     width: 100%;
     max-width: 400px;
     margin: 20px auto;
-    padding: 20px 25px;
+    // margin-top: 0;
+    // padding: 20px 25px;
+    // padding-top: 0;
     background: linear-gradient(0deg, #ffffff, #f8f8f8);
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -115,3 +117,16 @@
     color: #062D3E;
   }
   
+
+  .bar{
+    width: 100%;
+    padding: 0.275rem 0rem;
+    border-radius: 10px;
+    background: rgb(6,45,62);
+    background: linear-gradient(90deg, rgba(6,45,62,0.9697128851540616) 33%, rgba(237,92,1,1) 100%);
+    top: 0;
+  }
+
+  .form-container{
+    padding: 20px;
+  }

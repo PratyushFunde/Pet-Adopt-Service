@@ -1,11 +1,11 @@
 <div class="container">
   <div class="first-div">
 
-    <img src="../../../assets/images/dog1.jpg" alt="Card Image">
+    <img [src]="pet.image" alt="Card Image">
   </div>
   <div class="second-div">
-    <h2>Card Title</h2>
-    <p>This content slides up on hover. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim consequatur voluptates aliquid quisquam deleniti nihil quod autem dolore repellendus eos ipsa, porro recusandae voluptatem, eveniet ipsam eum, at veniam maiores aperiam molestias explicabo! Dolore praesentium saepe nulla, excepturi ab eius fuga sunt deserunt dolorem voluptas optio voluptatibus debitis quidem!</p>
+    <h2>{{pet?.name}}</h2>
+    <p>{{pet?.description}}</p>
     <button>Contact 
       <span class="material-symbols-outlined">
         call

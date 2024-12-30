@@ -3,16 +3,26 @@
         <p>Pet First</p>
     </div>
     <div class="options mainbg">
-        <div class="bg-select">
+        <!-- <div class="bg-select">
 
             <a href="" >About</a>
         </div>
         <a routerLink="#">Services</a>
         <a routerLink="#">Blog</a>
         <a routerLink="/adopt">Adopt a Pet</a>
-        <a routerLink="/list">Give a Pet</a>
+        <a routerLink="/list">Give a Pet</a> -->
+        <ul>
+            <li *ngFor="let option of navbarOptions; let i = index">
+              <a 
+                [routerLink]='option.path' 
+                [ngClass]="{ 'bg-select': selectedOption === i }" 
+                (click)="selectOption(i, $event)">
+                {{ option.name }}
+              </a>
+            </li>
+          </ul>
     </div>
     <div class="sign-up">
-        <button (click)="goToLoginSignUp()">Sign up</button>
+        <button (click)="goToLoginSignUp()">{{isLoggedIn?'Log Out':'Login / Sign Up'}}</button>
     </div>
 </div>

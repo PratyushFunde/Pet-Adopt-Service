@@ -1,9 +1,8 @@
+<app-navbar></app-navbar>
 <div class="main mainbg bd-red">
-    <app-pet-card></app-pet-card>
-    <app-pet-card></app-pet-card>
-    <!-- <app-pet-card></app-pet-card>
-    <app-pet-card></app-pet-card>
-    <app-pet-card></app-pet-card>
-    <app-pet-card></app-pet-card> -->
+    <ng-container *ngFor="let item of petList">
+
+        <app-pet-card [pet]="item"></app-pet-card>
+    </ng-container>
 
 </div>
